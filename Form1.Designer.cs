@@ -58,11 +58,12 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(65, 195);
+            label2.Location = new Point(45, 194);
             label2.Name = "label2";
-            label2.Size = new Size(107, 19);
+            label2.Size = new Size(127, 19);
             label2.TabIndex = 1;
-            label2.Text = "Dep. Karyawan: ";
+            label2.Text = "ID Dept Karyawan: ";
+            label2.Click += label2_Click;
             // 
             // btnUpdate
             // 
@@ -78,7 +79,7 @@
             // dgvData
             // 
             dgvData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvData.Location = new Point(231, 271);
+            dgvData.Location = new Point(280, 271);
             dgvData.Name = "dgvData";
             dgvData.RowTemplate.Height = 25;
             dgvData.Size = new Size(346, 150);
@@ -97,7 +98,7 @@
             // 
             // btnLoad
             // 
-            btnLoad.Location = new Point(614, 387);
+            btnLoad.Location = new Point(647, 387);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(75, 34);
             btnLoad.TabIndex = 10;

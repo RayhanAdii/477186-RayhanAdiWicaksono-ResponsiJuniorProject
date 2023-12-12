@@ -80,7 +80,7 @@ namespace EmployeeWFA
                     conn.Open();
                     dgvData.DataSource = null;
 
-                    sql = @"select * from karyawan";
+                    sql = @"select id_karyawan, nama, karyawan.id_dep, departemen.nama_dep from karyawan JOIN departemen ON karyawan.id_dep = departemen.id_dep";
                     cmd = new NpgsqlCommand(sql, conn);
 
                     dt = new DataTable();
@@ -169,6 +169,11 @@ namespace EmployeeWFA
                 {
                     MessageBox.Show("Error" + ex.Message, "FAIL", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
