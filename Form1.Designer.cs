@@ -40,6 +40,7 @@
             btnDelete = new Button();
             label4 = new Label();
             textBoxIDKaryawan = new TextBox();
+            listBoxIDDept = new ListBox();
             ((System.ComponentModel.ISupportInitialize)dgvData).BeginInit();
             SuspendLayout();
             // 
@@ -67,7 +68,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(494, 119);
+            btnUpdate.Location = new Point(513, 119);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(92, 81);
             btnUpdate.TabIndex = 5;
@@ -79,10 +80,10 @@
             // dgvData
             // 
             dgvData.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvData.Location = new Point(280, 271);
+            dgvData.Location = new Point(276, 255);
             dgvData.Name = "dgvData";
             dgvData.RowTemplate.Height = 25;
-            dgvData.Size = new Size(346, 150);
+            dgvData.Size = new Size(457, 157);
             dgvData.TabIndex = 7;
             dgvData.CellClick += dgvData_CellClick;
             // 
@@ -98,7 +99,7 @@
             // 
             // btnLoad
             // 
-            btnLoad.Location = new Point(647, 387);
+            btnLoad.Location = new Point(658, 424);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(75, 34);
             btnLoad.TabIndex = 10;
@@ -122,7 +123,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(375, 119);
+            btnAdd.Location = new Point(393, 119);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(92, 81);
             btnAdd.TabIndex = 13;
@@ -132,7 +133,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(614, 119);
+            btnDelete.Location = new Point(641, 119);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(92, 81);
             btnDelete.TabIndex = 14;
@@ -158,11 +159,23 @@
             textBoxIDKaryawan.Size = new Size(129, 23);
             textBoxIDKaryawan.TabIndex = 16;
             // 
+            // listBoxIDDept
+            // 
+            listBoxIDDept.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            listBoxIDDept.FormattingEnabled = true;
+            listBoxIDDept.ItemHeight = 17;
+            listBoxIDDept.Items.AddRange(new object[] { "HR : HR", "ENG : Engineer", "DEV : Developer", "PM : Product Manager", "FIN : Finance" });
+            listBoxIDDept.Location = new Point(79, 255);
+            listBoxIDDept.Name = "listBoxIDDept";
+            listBoxIDDept.Size = new Size(152, 157);
+            listBoxIDDept.TabIndex = 17;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 480);
+            Controls.Add(listBoxIDDept);
             Controls.Add(textBoxIDKaryawan);
             Controls.Add(label4);
             Controls.Add(btnDelete);
@@ -200,5 +213,6 @@
         private Button btnAdd;
         private Button btnDelete;
         private Label label4;
+        private ListBox listBoxIDDept;
     }
 }
